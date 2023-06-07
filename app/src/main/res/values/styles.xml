@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textStyle.500">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+
+    <style name="textStyle.700">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+    </style>
+
+</resources>

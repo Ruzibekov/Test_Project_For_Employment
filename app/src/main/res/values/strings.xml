@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Тестовое задание</string>
+
+    <string name="desc_profile_image">profile image</string>
+    <string name="desc_location_icon">location icon</string>
+    <string name="desc_main_item">main screen item background image</string>
+
+    <string name="main_menu_home">Главная</string>
+    <string name="main_menu_search">Поиск</string>
+    <string name="main_menu_basket">Корзина</string>
+    <string name="main_menu_account">Аккаунт</string>
+
+</resources>
