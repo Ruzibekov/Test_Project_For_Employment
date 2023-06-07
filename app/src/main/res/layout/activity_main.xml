@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.MainActivity">
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/fl_topbar"
@@ -65,16 +65,15 @@
         </androidx.cardview.widget.CardView>
     </FrameLayout>
 
-
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/ll_main_bottom"
         android:layout_below="@id/fl_topbar"
-        android:clipToPadding="false"
-        android:paddingVertical="8dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_main" />
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/main_nav_host" />
 
     <LinearLayout
         android:id="@+id/ll_main_bottom"
@@ -82,11 +81,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
-        
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/light_gray"/>
+            android:background="@color/light_gray" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
@@ -98,4 +97,6 @@
             app:menu="@menu/bottom_main_menu" />
 
     </LinearLayout>
+
+
 </RelativeLayout>

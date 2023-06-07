@@ -13,13 +13,13 @@
         android:theme="@style/Theme.ТестовоеЗадание"
         tools:targetApi="31">
         <activity
-            android:name=".ui.basket.BasketActivity"
+            android:name=".ui.basket.BasketFragment"
             android:exported="false" />
         <activity
-            android:name=".ui.product.ProductActivity"
+            android:name=".ui.product.ProductFragment"
             android:exported="false" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.category.CategoryActivity" />
+        <activity android:name=".ui.category.CategoryFragment" />
     </application>
 
 </manifest>
