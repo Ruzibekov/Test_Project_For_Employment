@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="14dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        app:cardBackgroundColor="@color/light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/desc_profile_image"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="@style/textStyle"
+        android:lineHeight="14.7dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:targetApi="p"
+        tools:text="Рулеты из ветчины" />
+
+</LinearLayout>
