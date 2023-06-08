@@ -68,16 +68,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/fl_topbar"
-        tools:listitem="@layout/item_basket"
+        android:clipToPadding="false"
         android:paddingHorizontal="16dp"
         android:paddingTop="16dp"
-        android:clipToPadding="false"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_basket" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/primaryButton"
         android:layout_alignParentBottom="true"
-        tools:text="Оплатить 2 004 ₽"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        tools:text="Оплатить 2 004 ₽" />
 
 </RelativeLayout>

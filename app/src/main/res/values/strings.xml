@@ -16,6 +16,7 @@
 
     <string name="bnt_add_to_basket">Добавить в корзину</string>
 
-
+    <string name="location_permission_not_granted">К сожалению, мы не можем получить доступ к вашей текущей локации</string>
+    <string name="unknown">Неизвестен</string>
 
 </resources>

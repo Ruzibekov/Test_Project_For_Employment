@@ -34,10 +34,11 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_city_name"
                     style="@style/textStyle"
                     android:drawablePadding="4dp"
                     android:textSize="18sp"
-                    tools:text="Санкт-Петербург" />
+                    android:text="@string/unknown" />
 
                 <TextView
                     style="@style/textStyle"
