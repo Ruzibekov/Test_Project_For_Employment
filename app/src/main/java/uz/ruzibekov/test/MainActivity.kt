@@ -18,14 +18,19 @@ class MainActivity : BasePermissionActivity() {
         init()
     }
 
+    private fun init() {
+        initViews()
+
+        setupNavController()
+    }
+
+    private fun initViews(){
+        bottomNavigation = findViewById(R.id.bottom_nav_view_main)
+    }
+
     fun requestLocationPerm(city: (String) -> Unit) {
         requestLocationPermission()
         cityName = { city.invoke(it) }
-    }
-
-    private fun init() {
-        bottomNavigation = findViewById(R.id.bottom_nav_view_main)
-        setupNavController()
     }
 
 
