@@ -3,8 +3,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <FrameLayout
         android:id="@+id/fl_topbar"
@@ -24,8 +24,7 @@
                 android:layout_height="24dp"
                 android:contentDescription="@string/desc_profile_image"
                 android:src="@drawable/ic_location"
-                android:translationY="4dp"
-                app:tint="@color/black" />
+                android:translationY="4dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -69,8 +68,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
         android:layout_below="@id/fl_topbar"
+        android:clipToPadding="false"
         android:paddingVertical="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_main" />

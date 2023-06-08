@@ -116,14 +116,8 @@
         tools:text="Рыба маринованная со специями, лимонным соком, соевым соусом и запечeнная в духовке с лучком, томатами и картошечкой под золотистой майонезно-сырной шубкой" />
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/textStyle.500"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        style="@style/primaryButton"
         android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_blue_card_r10"
-        android:text="@string/bnt_add_to_basket"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:text="@string/bnt_add_to_basket" />
 
 </LinearLayout>
