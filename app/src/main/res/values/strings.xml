@@ -6,11 +6,15 @@
     <string name="desc_location_icon">location icon</string>
     <string name="desc_main_item">main screen item background image</string>
     <string name="desc_item_category_eats">category screen eats item</string>
+    <string name="desc_like_icon">like icon</string>
+    <string name="desc_close_icon">close icon</string>
 
     <string name="main_menu_home">Главная</string>
     <string name="main_menu_search">Поиск</string>
     <string name="main_menu_basket">Корзина</string>
     <string name="main_menu_account">Аккаунт</string>
+
+    <string name="bnt_add_to_basket">Добавить в корзину</string>
 
 
 
