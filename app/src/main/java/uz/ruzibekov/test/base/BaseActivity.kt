@@ -5,8 +5,10 @@ import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.location.Location
+import android.net.Uri
 import android.os.Build
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -14,7 +16,7 @@ import com.google.android.gms.location.LocationServices
 import uz.ruzibekov.test.R
 import java.util.Locale
 
-open class BasePermissionActivity : AppCompatActivity() {
+abstract class BasePermissionActivity : AppCompatActivity() {
 
     private val locationPermissionCode = 123
 
@@ -97,5 +99,20 @@ open class BasePermissionActivity : AppCompatActivity() {
                 ).show()
             }
 
+    }
+
+
+    private val launcher = registerForActivityResult(
+        ActivityResultContracts.GetContent()
+    ) { uri: Uri? ->
+        uri?.let {
+            onImageSelected?.let { uri -> uri(it) }
+        }
+    }
+
+    open var onImageSelected: ((Uri) -> Unit)? = null
+
+    fun launchImageSelection() {
+        launcher.launch("image/*")
     }
 }

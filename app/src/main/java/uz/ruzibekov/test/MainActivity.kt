@@ -40,4 +40,5 @@ class MainActivity : BasePermissionActivity() {
         val navController = navHostFragment.navController
         bottomNavigation?.setupWithNavController(navController)
     }
+
 }
