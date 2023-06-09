@@ -2,18 +2,27 @@ package uz.ruzibekov.test
 
 
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import uz.ruzibekov.test.app.App
 import uz.ruzibekov.test.base.BasePermissionActivity
+import javax.inject.Inject
 
 class MainActivity : BasePermissionActivity() {
+
 
     private var bottomNavigation: BottomNavigationView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        (applicationContext as App).appComponent.inject(this)
+
+//        viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
 
         init()
     }
@@ -22,9 +31,11 @@ class MainActivity : BasePermissionActivity() {
         initViews()
 
         setupNavController()
+
+//        viewModel?.fetch()
     }
 
-    private fun initViews(){
+    private fun initViews() {
         bottomNavigation = findViewById(R.id.bottom_nav_view_main)
     }
 
